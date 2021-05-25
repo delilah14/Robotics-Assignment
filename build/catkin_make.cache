@@ -1,0 +1,2 @@
+arm_description:arm_gazebo:ros_publisher_subcriber
+-DCATKIN_DEVEL_PREFIX=/home/delilah/Documents/Robotics-Assignment/devel -DCMAKE_INSTALL_PREFIX=/home/delilah/Documents/Robotics-Assignment/install -G Unix Makefiles
