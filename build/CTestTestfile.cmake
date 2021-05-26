@@ -6,5 +6,5 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("arm_description")
-subdirs("arm_gazebo")
 subdirs("ros_publisher_subcriber")
+subdirs("arm_gazebo")

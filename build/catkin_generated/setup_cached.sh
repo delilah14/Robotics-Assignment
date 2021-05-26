@@ -12,5 +12,5 @@ export LD_LIBRARY_PATH="/home/delilah/Documents/Robotics-Assignment/devel/lib:$L
 export PKG_CONFIG_PATH="/home/delilah/Documents/Robotics-Assignment/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/delilah/Documents/Robotics-Assignment/build'
 export PYTHONPATH="/home/delilah/Documents/Robotics-Assignment/devel/lib/python3/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES='/home/delilah/Documents/Robotics-Assignment/devel/share/common-lisp'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/delilah/Documents/Robotics-Assignment/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/delilah/Documents/Robotics-Assignment/src:$ROS_PACKAGE_PATH"

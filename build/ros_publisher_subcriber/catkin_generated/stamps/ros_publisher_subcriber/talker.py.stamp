@@ -4,8 +4,8 @@
 
 import rospy
 from std_msgs.msg import String
-from beginner_tutorial.msg import Input
-from beginner_tutorial.msg import Output
+from ros_publisher_subcriber.msg import Input
+from ros_publisher_subcriber.msg import Output
 from math import cos, sin, radians
 import numpy as np
 import math

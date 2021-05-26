@@ -132,8 +132,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/delilah/Documents/Robotics-Assignment/build/gtest/cmake_install.cmake")
   include("/home/delilah/Documents/Robotics-Assignment/build/arm_description/cmake_install.cmake")
-  include("/home/delilah/Documents/Robotics-Assignment/build/arm_gazebo/cmake_install.cmake")
   include("/home/delilah/Documents/Robotics-Assignment/build/ros_publisher_subcriber/cmake_install.cmake")
+  include("/home/delilah/Documents/Robotics-Assignment/build/arm_gazebo/cmake_install.cmake")
 
 endif()
 

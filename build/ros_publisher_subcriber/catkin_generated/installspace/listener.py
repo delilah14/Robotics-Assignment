@@ -38,7 +38,7 @@
 
 import rospy
 from std_msgs.msg import String
-from beginner_tutorial.msg import Output
+from ros_publisher_subcriber.msg import Output
 
 def callback(data):
     rospy.loginfo("x=%f, y=%f, z=%f" % (data.vector.x, data.vector.y, data.vector.z))
