@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# Software License Agreement (BSD License)
-
-
 import rospy
 from std_msgs.msg import String
 from ros_publisher_subcriber.msg import Input
@@ -10,11 +6,9 @@ from math import cos, sin, radians
 import numpy as np
 import math
 
-
 def trig(angle):
   r = radians(angle)
   return cos(r), sin(r)
-
 
 def rotate(rotation):
     xC, xS = trig(rotation[0])
@@ -42,7 +36,6 @@ def translation(translation_vector, v):
                                [dZ],
                                ])
   return np.dot(Translate_matrix,v)
-
 
 def talker():
 

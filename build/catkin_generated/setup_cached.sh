@@ -7,10 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/lelo/Desktop/Robotics-Assignment/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/lelo/Desktop/Robotics-Assignment/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/lelo/Desktop/Robotics-Assignment/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export LD_LIBRARY_PATH='/opt/ros/noetic/lib'
+export PKG_CONFIG_PATH='/opt/ros/noetic/lib/pkgconfig'
 export PWD='/home/lelo/Desktop/Robotics-Assignment/build'
-export PYTHONPATH="/home/lelo/Desktop/Robotics-Assignment/devel/lib/python3/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES='/home/lelo/Desktop/Robotics-Assignment/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/lelo/Desktop/Robotics-Assignment/src:$ROS_PACKAGE_PATH"
+export PYTHONPATH='/opt/ros/noetic/lib/python3/dist-packages'

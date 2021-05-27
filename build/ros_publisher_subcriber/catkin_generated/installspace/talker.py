@@ -1,7 +1,3 @@
-#!/usr/bin/env python3
-# Software License Agreement (BSD License)
-
-
 import rospy
 from std_msgs.msg import String
 from ros_publisher_subcriber.msg import Input
@@ -10,11 +6,9 @@ from math import cos, sin, radians
 import numpy as np
 import math
 
-
 def trig(angle):
   r = radians(angle)
   return cos(r), sin(r)
-
 
 def rotate(rotation):
     xC, xS = trig(rotation[0])
@@ -43,7 +37,6 @@ def translation(translation_vector, v):
                                ])
   return np.dot(Translate_matrix,v)
 
-
 def talker():
 
     pub = rospy.Publisher('chatter', Output, queue_size=10)
@@ -55,12 +48,12 @@ def talker():
     print("Rotate and Translate a vector")
 
     input_vector.vector.linear.x = float(input("Input x (position):"))
-    input_vector.vector.linear.y = float(input("Input x (position):"))
-    input_vector.vector.linear.z = float(input("Input x (position):"))
+    input_vector.vector.linear.y = float(input("Input y (position):"))
+    input_vector.vector.linear.z = float(input("Input z (position):"))
 
     input_vector.vector.angular.x = float(input("Input teta (x-axis rotation):"))
-    input_vector.vector.angular.y = float(input("Input teta (x-axis rotation):"))
-    input_vector.vector.angular.z = float(input("Input teta (x-axis rotation):"))
+    input_vector.vector.angular.y = float(input("Input teta (y-axis rotation):"))
+    input_vector.vector.angular.z = float(input("Input teta (z-axis rotation):"))
   
     
     v = [input_vector.vector.linear.x, input_vector.vector.linear.y, input_vector.vector.linear.z]

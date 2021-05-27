@@ -6,22 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/lelo/Desktop/Robotics-Assignment/devel/include/arm_gazebo/angles.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-
 /home/lelo/Desktop/Robotics-Assignment/src/arm_gazebo/src/controller.cpp
 functional
 -

@@ -49,75 +49,61 @@ namespace gazebo
 				std::bind(&ModelPush::OnUpdate, this));
 
 
-							// Initialize ros, if it has not already bee initialized.
-			if (!ros::isInitialized())
-			{
-			int argc = 0;
-			char **argv = NULL;
-			ros::init(argc, argv, "gazebo_client",
-				ros::init_options::NoSigintHandler);
+			// Initialize ros, if it has not already bee initialized.
+			if (!ros::isInitialized()){
+				int argc = 0;
+				char **argv = NULL;
+				ros::init(argc, argv, "gazebo_client",
+					ros::init_options::NoSigintHandler);
 			}
 
 			// Create our ROS node. This acts in a similar manner to
 			// the Gazebo node
 			this->rosNode.reset(new ros::NodeHandle("gazebo_client"));
-
 			// Create a named topic, and subscribe to it.
-			ros::SubscribeOptions so =
-			ros::SubscribeOptions::create<arm_gazebo::angles>(
-				"/" + this->model->GetName() + "/vel_cmd",
-				1,
-				boost::bind(&ModelPush::OnRosMsg, this, _1),
-				ros::VoidPtr(), &this->rosQueue);
+			ros::SubscribeOptions so =	ros::SubscribeOptions::create<arm_gazebo::angles>(
+				                            "/" + this->model->GetName() + "/vel_cmd",
+				                            1,
+											boost::bind(&ModelPush::OnRosMsg, this, _1),
+											ros::VoidPtr(), 
+											&this->rosQueue);
 			this->rosSub = this->rosNode->subscribe(so);
 
 			// Spin up the queue helper thread.
 			this->rosQueueThread =
 			std::thread(std::bind(&ModelPush::QueueThread, this));
 		}
-		
-
-			public: void SetVelocity(const double &_vel)
-				{
-				// Set the joint's target velocity.
-				 std::string name = this->model->GetJoint("arm2_arm3_joint")->GetScopedName();
-				this->jointController->SetVelocityTarget(name, 10.0);
-				
-				}
-		    public: void SetAngle(const arm_gazebo::angles::ConstPtr& msg)
-				{		
-					std::string chassis_arm1_joint = this->model->GetJoint(chassis_arm1_joint_name)->GetScopedName();
-					std::string arm1_arm2_joint = this->model->GetJoint(arm1_arm2_joint_name)->GetScopedName();
-					std::string arm2_arm3_joint = this->model->GetJoint(arm2_arm3_joint_name)->GetScopedName();
-					std::string arm3_arm4_joint = this->model->GetJoint(arm3_arm4_joint_name)->GetScopedName();
-
-					this->jointController->SetPositionTarget(chassis_arm1_joint,  msg->chassis_arm1_joint);
-					this->jointController->SetPositionTarget(arm1_arm2_joint,  msg->arm1_arm2_joint);
-					this->jointController->SetPositionTarget(arm2_arm3_joint,  msg->arm2_arm3_joint);
-					this->jointController->SetPositionTarget(arm3_arm4_joint,  msg->arm3_arm4_joint);
-				
-				}
-
-
-			public: void OnRosMsg(const arm_gazebo::angles::ConstPtr& msg)
-			{
+		public: void OnRosMsg(const arm_gazebo::angles::ConstPtr& msg){
 				this->SetAngle(msg);
-			
-			}
-
-			/// \brief ROS helper function that processes messages
-			private: void QueueThread()
-			{
+		}
+		public: void SetAngle(const arm_gazebo::angles::ConstPtr& msg)
+		{		
+			std::string chassis_arm1_joint = this->model->GetJoint(chassis_arm1_joint_name)->GetScopedName();
+			std::string arm1_arm2_joint = this->model->GetJoint(arm1_arm2_joint_name)->GetScopedName();
+			std::string arm2_arm3_joint = this->model->GetJoint(arm2_arm3_joint_name)->GetScopedName();
+			std::string arm3_arm4_joint = this->model->GetJoint(arm3_arm4_joint_name)->GetScopedName();
+			this->jointController->SetPositionTarget(chassis_arm1_joint,  msg->chassis_arm1_joint);
+			this->jointController->SetPositionTarget(arm1_arm2_joint,  msg->arm1_arm2_joint);
+			this->jointController->SetPositionTarget(arm2_arm3_joint,  msg->arm2_arm3_joint);
+			this->jointController->SetPositionTarget(arm3_arm4_joint,  msg->arm3_arm4_joint);
+		}
+		public: void SetVelocity(const double &_vel){
+			// Set the joint's target velocity.
+			std::string name = this->model->GetJoint("arm2_arm3_joint")->GetScopedName();
+			this->jointController->SetVelocityTarget(name, 10.0);
+		}
+		
+		/// brief ROS helper function that processes messages
+		private: void QueueThread(){
 			static const double timeout = 0.01;
 			while (this->rosNode->ok())
 			{
 				this->rosQueue.callAvailable(ros::WallDuration(timeout));
 			}
-}
+		}
+
 		// Called by the world update start event
-	public:
-		void OnUpdate()
-		{
+		public:	void OnUpdate(){
 			float angleDegree = -90;
 			float j1_rot_angle = 0;
 			float j2_rot_angle = 0;
