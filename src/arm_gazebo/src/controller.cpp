@@ -85,11 +85,7 @@ namespace gazebo
 				
 				}
 		    public: void SetAngle(const arm_gazebo::angles::ConstPtr& msg)
-				{
-					std::cout << "Message Recieved"<<std::endl;
-					ROS_INFO("I heard: [%.2f]", msg->chassis_arm1_joint);
-
-			
+				{		
 					std::string chassis_arm1_joint = this->model->GetJoint(chassis_arm1_joint_name)->GetScopedName();
 					std::string arm1_arm2_joint = this->model->GetJoint(arm1_arm2_joint_name)->GetScopedName();
 					std::string arm2_arm3_joint = this->model->GetJoint(arm2_arm3_joint_name)->GetScopedName();
