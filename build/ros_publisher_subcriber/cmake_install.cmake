@@ -1,8 +1,8 @@
-# Install script for directory: /home/delilah/Documents/Robotics-Assignment/src/ros_publisher_subcriber
+# Install script for directory: /home/lelo/Desktop/Robotics-Assignment/src/ros_publisher_subcriber
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/delilah/Documents/Robotics-Assignment/install")
+  set(CMAKE_INSTALL_PREFIX "/home/lelo/Desktop/Robotics-Assignment/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,63 +39,63 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_publisher_subcriber/msg" TYPE FILE FILES
-    "/home/delilah/Documents/Robotics-Assignment/src/ros_publisher_subcriber/msg/Input.msg"
-    "/home/delilah/Documents/Robotics-Assignment/src/ros_publisher_subcriber/msg/Output.msg"
+    "/home/lelo/Desktop/Robotics-Assignment/src/ros_publisher_subcriber/msg/Input.msg"
+    "/home/lelo/Desktop/Robotics-Assignment/src/ros_publisher_subcriber/msg/Output.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_publisher_subcriber/cmake" TYPE FILE FILES "/home/delilah/Documents/Robotics-Assignment/build/ros_publisher_subcriber/catkin_generated/installspace/ros_publisher_subcriber-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_publisher_subcriber/cmake" TYPE FILE FILES "/home/lelo/Desktop/Robotics-Assignment/build/ros_publisher_subcriber/catkin_generated/installspace/ros_publisher_subcriber-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/delilah/Documents/Robotics-Assignment/devel/include/ros_publisher_subcriber")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/lelo/Desktop/Robotics-Assignment/devel/include/ros_publisher_subcriber")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/delilah/Documents/Robotics-Assignment/devel/share/roseus/ros/ros_publisher_subcriber")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/lelo/Desktop/Robotics-Assignment/devel/share/roseus/ros/ros_publisher_subcriber")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/delilah/Documents/Robotics-Assignment/devel/share/common-lisp/ros/ros_publisher_subcriber")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/lelo/Desktop/Robotics-Assignment/devel/share/common-lisp/ros/ros_publisher_subcriber")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/delilah/Documents/Robotics-Assignment/devel/share/gennodejs/ros/ros_publisher_subcriber")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/lelo/Desktop/Robotics-Assignment/devel/share/gennodejs/ros/ros_publisher_subcriber")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/delilah/Documents/Robotics-Assignment/devel/lib/python3/dist-packages/ros_publisher_subcriber")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/lelo/Desktop/Robotics-Assignment/devel/lib/python3/dist-packages/ros_publisher_subcriber")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/delilah/Documents/Robotics-Assignment/devel/lib/python3/dist-packages/ros_publisher_subcriber")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/lelo/Desktop/Robotics-Assignment/devel/lib/python3/dist-packages/ros_publisher_subcriber")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/delilah/Documents/Robotics-Assignment/build/ros_publisher_subcriber/catkin_generated/installspace/ros_publisher_subcriber.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/lelo/Desktop/Robotics-Assignment/build/ros_publisher_subcriber/catkin_generated/installspace/ros_publisher_subcriber.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_publisher_subcriber/cmake" TYPE FILE FILES "/home/delilah/Documents/Robotics-Assignment/build/ros_publisher_subcriber/catkin_generated/installspace/ros_publisher_subcriber-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_publisher_subcriber/cmake" TYPE FILE FILES "/home/lelo/Desktop/Robotics-Assignment/build/ros_publisher_subcriber/catkin_generated/installspace/ros_publisher_subcriber-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_publisher_subcriber/cmake" TYPE FILE FILES
-    "/home/delilah/Documents/Robotics-Assignment/build/ros_publisher_subcriber/catkin_generated/installspace/ros_publisher_subcriberConfig.cmake"
-    "/home/delilah/Documents/Robotics-Assignment/build/ros_publisher_subcriber/catkin_generated/installspace/ros_publisher_subcriberConfig-version.cmake"
+    "/home/lelo/Desktop/Robotics-Assignment/build/ros_publisher_subcriber/catkin_generated/installspace/ros_publisher_subcriberConfig.cmake"
+    "/home/lelo/Desktop/Robotics-Assignment/build/ros_publisher_subcriber/catkin_generated/installspace/ros_publisher_subcriberConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_publisher_subcriber" TYPE FILE FILES "/home/delilah/Documents/Robotics-Assignment/src/ros_publisher_subcriber/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_publisher_subcriber" TYPE FILE FILES "/home/lelo/Desktop/Robotics-Assignment/src/ros_publisher_subcriber/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ros_publisher_subcriber" TYPE PROGRAM FILES "/home/delilah/Documents/Robotics-Assignment/build/ros_publisher_subcriber/catkin_generated/installspace/talker.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ros_publisher_subcriber" TYPE PROGRAM FILES "/home/lelo/Desktop/Robotics-Assignment/build/ros_publisher_subcriber/catkin_generated/installspace/talker.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ros_publisher_subcriber" TYPE PROGRAM FILES "/home/delilah/Documents/Robotics-Assignment/build/ros_publisher_subcriber/catkin_generated/installspace/listener.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ros_publisher_subcriber" TYPE PROGRAM FILES "/home/lelo/Desktop/Robotics-Assignment/build/ros_publisher_subcriber/catkin_generated/installspace/listener.py")
 endif()
 

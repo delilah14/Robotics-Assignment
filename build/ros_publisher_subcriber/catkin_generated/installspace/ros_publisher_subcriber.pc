@@ -1,4 +1,4 @@
-prefix=/home/delilah/Documents/Robotics-Assignment/install
+prefix=/home/lelo/Desktop/Robotics-Assignment/install
 
 Name: ros_publisher_subcriber
 Description: Description of ros_publisher_subcriber

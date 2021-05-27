@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/delilah/Documents/Robotics-Assignment/devel/share/common-lisp/ros/ros_publisher_subcriber/msg/Input.lisp"
-  "/home/delilah/Documents/Robotics-Assignment/devel/share/common-lisp/ros/ros_publisher_subcriber/msg/Output.lisp"
+  "/home/lelo/Desktop/Robotics-Assignment/devel/share/common-lisp/ros/ros_publisher_subcriber/msg/Input.lisp"
+  "/home/lelo/Desktop/Robotics-Assignment/devel/share/common-lisp/ros/ros_publisher_subcriber/msg/Output.lisp"
   "CMakeFiles/ros_publisher_subcriber_generate_messages_lisp"
 )
 

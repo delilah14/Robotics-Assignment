@@ -112,7 +112,7 @@ namespace gazebo
 			float j4_rot_angle = 0;
 			float rad = M_PI * angleDegree / 180;
 
-			double j1 = physics::JointState(this->model->GetJoint(chassis_arm1_joint_name)).Position(2);
+			double j1 = physics::JointState(this->model->GetJoint(chassis_arm1_joint_name)).Position(0);
 			double j2 = physics::JointState(this->model->GetJoint(arm1_arm2_joint_name)).Position(0);
 			double j3 = physics::JointState(this->model->GetJoint(arm2_arm3_joint_name)).Position(0);
 			double j4 = physics::JointState(this->model->GetJoint(arm3_arm4_joint_name)).Position(0);			

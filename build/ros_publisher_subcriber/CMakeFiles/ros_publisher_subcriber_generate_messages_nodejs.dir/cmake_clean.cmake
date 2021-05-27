@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/delilah/Documents/Robotics-Assignment/devel/share/gennodejs/ros/ros_publisher_subcriber/msg/Input.js"
-  "/home/delilah/Documents/Robotics-Assignment/devel/share/gennodejs/ros/ros_publisher_subcriber/msg/Output.js"
+  "/home/lelo/Desktop/Robotics-Assignment/devel/share/gennodejs/ros/ros_publisher_subcriber/msg/Input.js"
+  "/home/lelo/Desktop/Robotics-Assignment/devel/share/gennodejs/ros/ros_publisher_subcriber/msg/Output.js"
   "CMakeFiles/ros_publisher_subcriber_generate_messages_nodejs"
 )
 

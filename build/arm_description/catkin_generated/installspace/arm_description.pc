@@ -1,4 +1,4 @@
-prefix=/home/delilah/Documents/Robotics-Assignment/install
+prefix=/home/lelo/Desktop/Robotics-Assignment/install
 
 Name: arm_description
 Description: Description of arm_description

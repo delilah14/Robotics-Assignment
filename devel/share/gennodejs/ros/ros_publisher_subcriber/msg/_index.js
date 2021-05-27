@@ -1,12 +1,12 @@
 
 "use strict";
 
-let Input = require('./Input.js');
-let Output = require('./Output.js');
 let Num = require('./Num.js');
+let Output = require('./Output.js');
+let Input = require('./Input.js');
 
 module.exports = {
-  Input: Input,
-  Output: Output,
   Num: Num,
+  Output: Output,
+  Input: Input,
 };

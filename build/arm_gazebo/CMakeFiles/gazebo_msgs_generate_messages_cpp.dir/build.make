@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/delilah/Documents/Robotics-Assignment/src
+CMAKE_SOURCE_DIR = /home/lelo/Desktop/Robotics-Assignment/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/delilah/Documents/Robotics-Assignment/build
+CMAKE_BINARY_DIR = /home/lelo/Desktop/Robotics-Assignment/build
 
 # Utility rule file for gazebo_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ arm_gazebo/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build: gazebo_msgs_g
 .PHONY : arm_gazebo/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build
 
 arm_gazebo/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/clean:
-	cd /home/delilah/Documents/Robotics-Assignment/build/arm_gazebo && $(CMAKE_COMMAND) -P CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/lelo/Desktop/Robotics-Assignment/build/arm_gazebo && $(CMAKE_COMMAND) -P CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : arm_gazebo/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/clean
 
 arm_gazebo/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/depend:
-	cd /home/delilah/Documents/Robotics-Assignment/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/delilah/Documents/Robotics-Assignment/src /home/delilah/Documents/Robotics-Assignment/src/arm_gazebo /home/delilah/Documents/Robotics-Assignment/build /home/delilah/Documents/Robotics-Assignment/build/arm_gazebo /home/delilah/Documents/Robotics-Assignment/build/arm_gazebo/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lelo/Desktop/Robotics-Assignment/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lelo/Desktop/Robotics-Assignment/src /home/lelo/Desktop/Robotics-Assignment/src/arm_gazebo /home/lelo/Desktop/Robotics-Assignment/build /home/lelo/Desktop/Robotics-Assignment/build/arm_gazebo /home/lelo/Desktop/Robotics-Assignment/build/arm_gazebo/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : arm_gazebo/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/depend
 

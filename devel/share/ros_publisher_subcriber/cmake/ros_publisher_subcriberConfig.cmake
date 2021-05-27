@@ -67,14 +67,14 @@ set(ros_publisher_subcriber_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(ros_publisher_subcriber_SOURCE_PREFIX /home/delilah/Documents/Robotics-Assignment/src/ros_publisher_subcriber)
-  set(ros_publisher_subcriber_DEVEL_PREFIX /home/delilah/Documents/Robotics-Assignment/devel)
+  set(ros_publisher_subcriber_SOURCE_PREFIX /home/lelo/Desktop/Robotics-Assignment/src/ros_publisher_subcriber)
+  set(ros_publisher_subcriber_DEVEL_PREFIX /home/lelo/Desktop/Robotics-Assignment/devel)
   set(ros_publisher_subcriber_INSTALL_PREFIX "")
   set(ros_publisher_subcriber_PREFIX ${ros_publisher_subcriber_DEVEL_PREFIX})
 else()
   set(ros_publisher_subcriber_SOURCE_PREFIX "")
   set(ros_publisher_subcriber_DEVEL_PREFIX "")
-  set(ros_publisher_subcriber_INSTALL_PREFIX /home/delilah/Documents/Robotics-Assignment/install)
+  set(ros_publisher_subcriber_INSTALL_PREFIX /home/lelo/Desktop/Robotics-Assignment/install)
   set(ros_publisher_subcriber_PREFIX ${ros_publisher_subcriber_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(ros_publisher_subcriber_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/delilah/Documents/Robotics-Assignment/devel/include " STREQUAL " ")
+if(NOT "/home/lelo/Desktop/Robotics-Assignment/devel/include " STREQUAL " ")
   set(ros_publisher_subcriber_INCLUDE_DIRS "")
-  set(_include_dirs "/home/delilah/Documents/Robotics-Assignment/devel/include")
+  set(_include_dirs "/home/lelo/Desktop/Robotics-Assignment/devel/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/delilah/Documents/Robotics-Assignment/devel/include " STREQUAL " "
         message(FATAL_ERROR "Project 'ros_publisher_subcriber' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'ros_publisher_subcriber' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/delilah/Documents/Robotics-Assignment/src/ros_publisher_subcriber/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'ros_publisher_subcriber' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/lelo/Desktop/Robotics-Assignment/src/ros_publisher_subcriber/${idir}'.  ${_report}")
     endif()
     _list_append_unique(ros_publisher_subcriber_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/delilah/Documents/Robotics-Assignment/devel/lib;/home/delilah/Downloads/angle_node/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/lelo/Desktop/Robotics-Assignment/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

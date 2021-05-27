@@ -1,8 +1,8 @@
-# Install script for directory: /home/delilah/Documents/Robotics-Assignment/src
+# Install script for directory: /home/lelo/Desktop/Robotics-Assignment/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/delilah/Documents/Robotics-Assignment/install")
+  set(CMAKE_INSTALL_PREFIX "/home/lelo/Desktop/Robotics-Assignment/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,91 +49,91 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/delilah/Documents/Robotics-Assignment/install/_setup_util.py")
+   "/home/lelo/Desktop/Robotics-Assignment/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/delilah/Documents/Robotics-Assignment/install" TYPE PROGRAM FILES "/home/delilah/Documents/Robotics-Assignment/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/lelo/Desktop/Robotics-Assignment/install" TYPE PROGRAM FILES "/home/lelo/Desktop/Robotics-Assignment/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/delilah/Documents/Robotics-Assignment/install/env.sh")
+   "/home/lelo/Desktop/Robotics-Assignment/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/delilah/Documents/Robotics-Assignment/install" TYPE PROGRAM FILES "/home/delilah/Documents/Robotics-Assignment/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/lelo/Desktop/Robotics-Assignment/install" TYPE PROGRAM FILES "/home/lelo/Desktop/Robotics-Assignment/build/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/delilah/Documents/Robotics-Assignment/install/setup.bash;/home/delilah/Documents/Robotics-Assignment/install/local_setup.bash")
+   "/home/lelo/Desktop/Robotics-Assignment/install/setup.bash;/home/lelo/Desktop/Robotics-Assignment/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/delilah/Documents/Robotics-Assignment/install" TYPE FILE FILES
-    "/home/delilah/Documents/Robotics-Assignment/build/catkin_generated/installspace/setup.bash"
-    "/home/delilah/Documents/Robotics-Assignment/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/lelo/Desktop/Robotics-Assignment/install" TYPE FILE FILES
+    "/home/lelo/Desktop/Robotics-Assignment/build/catkin_generated/installspace/setup.bash"
+    "/home/lelo/Desktop/Robotics-Assignment/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/delilah/Documents/Robotics-Assignment/install/setup.sh;/home/delilah/Documents/Robotics-Assignment/install/local_setup.sh")
+   "/home/lelo/Desktop/Robotics-Assignment/install/setup.sh;/home/lelo/Desktop/Robotics-Assignment/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/delilah/Documents/Robotics-Assignment/install" TYPE FILE FILES
-    "/home/delilah/Documents/Robotics-Assignment/build/catkin_generated/installspace/setup.sh"
-    "/home/delilah/Documents/Robotics-Assignment/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/lelo/Desktop/Robotics-Assignment/install" TYPE FILE FILES
+    "/home/lelo/Desktop/Robotics-Assignment/build/catkin_generated/installspace/setup.sh"
+    "/home/lelo/Desktop/Robotics-Assignment/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/delilah/Documents/Robotics-Assignment/install/setup.zsh;/home/delilah/Documents/Robotics-Assignment/install/local_setup.zsh")
+   "/home/lelo/Desktop/Robotics-Assignment/install/setup.zsh;/home/lelo/Desktop/Robotics-Assignment/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/delilah/Documents/Robotics-Assignment/install" TYPE FILE FILES
-    "/home/delilah/Documents/Robotics-Assignment/build/catkin_generated/installspace/setup.zsh"
-    "/home/delilah/Documents/Robotics-Assignment/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/lelo/Desktop/Robotics-Assignment/install" TYPE FILE FILES
+    "/home/lelo/Desktop/Robotics-Assignment/build/catkin_generated/installspace/setup.zsh"
+    "/home/lelo/Desktop/Robotics-Assignment/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/delilah/Documents/Robotics-Assignment/install/.rosinstall")
+   "/home/lelo/Desktop/Robotics-Assignment/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/delilah/Documents/Robotics-Assignment/install" TYPE FILE FILES "/home/delilah/Documents/Robotics-Assignment/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/lelo/Desktop/Robotics-Assignment/install" TYPE FILE FILES "/home/lelo/Desktop/Robotics-Assignment/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/delilah/Documents/Robotics-Assignment/build/gtest/cmake_install.cmake")
-  include("/home/delilah/Documents/Robotics-Assignment/build/arm_description/cmake_install.cmake")
-  include("/home/delilah/Documents/Robotics-Assignment/build/ros_publisher_subcriber/cmake_install.cmake")
-  include("/home/delilah/Documents/Robotics-Assignment/build/arm_gazebo/cmake_install.cmake")
+  include("/home/lelo/Desktop/Robotics-Assignment/build/gtest/cmake_install.cmake")
+  include("/home/lelo/Desktop/Robotics-Assignment/build/arm_description/cmake_install.cmake")
+  include("/home/lelo/Desktop/Robotics-Assignment/build/ros_publisher_subcriber/cmake_install.cmake")
+  include("/home/lelo/Desktop/Robotics-Assignment/build/arm_gazebo/cmake_install.cmake")
 
 endif()
 
@@ -145,5 +145,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/delilah/Documents/Robotics-Assignment/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/lelo/Desktop/Robotics-Assignment/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

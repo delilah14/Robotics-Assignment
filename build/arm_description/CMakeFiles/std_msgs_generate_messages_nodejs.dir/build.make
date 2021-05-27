@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/delilah/Documents/Robotics-Assignment/src
+CMAKE_SOURCE_DIR = /home/lelo/Desktop/Robotics-Assignment/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/delilah/Documents/Robotics-Assignment/build
+CMAKE_BINARY_DIR = /home/lelo/Desktop/Robotics-Assignment/build
 
 # Utility rule file for std_msgs_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ arm_description/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build: std_msgs
 .PHONY : arm_description/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 
 arm_description/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
-	cd /home/delilah/Documents/Robotics-Assignment/build/arm_description && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/lelo/Desktop/Robotics-Assignment/build/arm_description && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : arm_description/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 
 arm_description/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/delilah/Documents/Robotics-Assignment/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/delilah/Documents/Robotics-Assignment/src /home/delilah/Documents/Robotics-Assignment/src/arm_description /home/delilah/Documents/Robotics-Assignment/build /home/delilah/Documents/Robotics-Assignment/build/arm_description /home/delilah/Documents/Robotics-Assignment/build/arm_description/CMakeFiles/std_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lelo/Desktop/Robotics-Assignment/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lelo/Desktop/Robotics-Assignment/src /home/lelo/Desktop/Robotics-Assignment/src/arm_description /home/lelo/Desktop/Robotics-Assignment/build /home/lelo/Desktop/Robotics-Assignment/build/arm_description /home/lelo/Desktop/Robotics-Assignment/build/arm_description/CMakeFiles/std_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : arm_description/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
 

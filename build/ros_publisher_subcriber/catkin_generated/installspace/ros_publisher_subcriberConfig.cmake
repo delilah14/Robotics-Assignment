@@ -67,14 +67,14 @@ set(ros_publisher_subcriber_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(ros_publisher_subcriber_SOURCE_PREFIX /home/delilah/Documents/Robotics-Assignment/src/ros_publisher_subcriber)
-  set(ros_publisher_subcriber_DEVEL_PREFIX /home/delilah/Documents/Robotics-Assignment/devel)
+  set(ros_publisher_subcriber_SOURCE_PREFIX /home/lelo/Desktop/Robotics-Assignment/src/ros_publisher_subcriber)
+  set(ros_publisher_subcriber_DEVEL_PREFIX /home/lelo/Desktop/Robotics-Assignment/devel)
   set(ros_publisher_subcriber_INSTALL_PREFIX "")
   set(ros_publisher_subcriber_PREFIX ${ros_publisher_subcriber_DEVEL_PREFIX})
 else()
   set(ros_publisher_subcriber_SOURCE_PREFIX "")
   set(ros_publisher_subcriber_DEVEL_PREFIX "")
-  set(ros_publisher_subcriber_INSTALL_PREFIX /home/delilah/Documents/Robotics-Assignment/install)
+  set(ros_publisher_subcriber_INSTALL_PREFIX /home/lelo/Desktop/Robotics-Assignment/install)
   set(ros_publisher_subcriber_PREFIX ${ros_publisher_subcriber_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/delilah/Documents/Robotics-Assignment/install/lib;/home/delilah/Downloads/angle_node/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/lelo/Desktop/Robotics-Assignment/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
