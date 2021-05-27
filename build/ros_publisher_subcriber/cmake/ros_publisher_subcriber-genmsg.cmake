@@ -19,7 +19,7 @@ add_custom_target(ros_publisher_subcriber_generate_messages ALL)
 
 get_filename_component(_filename "/home/lelo/Desktop/Robotics-Assignment/src/ros_publisher_subcriber/msg/Input.msg" NAME_WE)
 add_custom_target(_ros_publisher_subcriber_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ros_publisher_subcriber" "/home/lelo/Desktop/Robotics-Assignment/src/ros_publisher_subcriber/msg/Input.msg" "geometry_msgs/Vector3:geometry_msgs/Twist:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ros_publisher_subcriber" "/home/lelo/Desktop/Robotics-Assignment/src/ros_publisher_subcriber/msg/Input.msg" "geometry_msgs/Twist:geometry_msgs/Vector3:std_msgs/Header"
 )
 
 get_filename_component(_filename "/home/lelo/Desktop/Robotics-Assignment/src/ros_publisher_subcriber/msg/Output.msg" NAME_WE)
@@ -36,7 +36,7 @@ add_custom_target(_ros_publisher_subcriber_generate_messages_check_deps_${_filen
 _generate_msg_cpp(ros_publisher_subcriber
   "/home/lelo/Desktop/Robotics-Assignment/src/ros_publisher_subcriber/msg/Input.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/ros_publisher_subcriber
 )
 _generate_msg_cpp(ros_publisher_subcriber
@@ -77,7 +77,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS ros_publisher_subcriber_generate_me
 _generate_msg_eus(ros_publisher_subcriber
   "/home/lelo/Desktop/Robotics-Assignment/src/ros_publisher_subcriber/msg/Input.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/ros_publisher_subcriber
 )
 _generate_msg_eus(ros_publisher_subcriber
@@ -118,7 +118,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS ros_publisher_subcriber_generate_me
 _generate_msg_lisp(ros_publisher_subcriber
   "/home/lelo/Desktop/Robotics-Assignment/src/ros_publisher_subcriber/msg/Input.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/ros_publisher_subcriber
 )
 _generate_msg_lisp(ros_publisher_subcriber
@@ -159,7 +159,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS ros_publisher_subcriber_generate_me
 _generate_msg_nodejs(ros_publisher_subcriber
   "/home/lelo/Desktop/Robotics-Assignment/src/ros_publisher_subcriber/msg/Input.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/ros_publisher_subcriber
 )
 _generate_msg_nodejs(ros_publisher_subcriber
@@ -200,7 +200,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS ros_publisher_subcriber_generate_me
 _generate_msg_py(ros_publisher_subcriber
   "/home/lelo/Desktop/Robotics-Assignment/src/ros_publisher_subcriber/msg/Input.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/ros_publisher_subcriber
 )
 _generate_msg_py(ros_publisher_subcriber

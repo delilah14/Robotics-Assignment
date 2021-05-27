@@ -9,6 +9,7 @@
 #include <ros/callback_queue.h>
 #include <ros/subscribe_options.h>
 #include <std_msgs/Float32.h>
+#include "arm_gazebo/angles.h" 
 using namespace std;
 
 namespace gazebo
@@ -63,7 +64,7 @@ namespace gazebo
 
 			// Create a named topic, and subscribe to it.
 			ros::SubscribeOptions so =
-			ros::SubscribeOptions::create<std_msgs::Float32>(
+			ros::SubscribeOptions::create<arm_gazebo::angles>(
 				"/" + this->model->GetName() + "/vel_cmd",
 				1,
 				boost::bind(&ModelPush::OnRosMsg, this, _1),
@@ -83,12 +84,28 @@ namespace gazebo
 				this->jointController->SetVelocityTarget(name, 10.0);
 				
 				}
-		
+		    public: void SetAngle(const arm_gazebo::angles::ConstPtr& msg)
+				{
+					std::cout << "Message Recieved"<<std::endl;
+					ROS_INFO("I heard: [%.2f]", msg->chassis_arm1_joint);
+
+			
+					std::string chassis_arm1_joint = this->model->GetJoint(chassis_arm1_joint_name)->GetScopedName();
+					std::string arm1_arm2_joint = this->model->GetJoint(arm1_arm2_joint_name)->GetScopedName();
+					std::string arm2_arm3_joint = this->model->GetJoint(arm2_arm3_joint_name)->GetScopedName();
+					std::string arm3_arm4_joint = this->model->GetJoint(arm3_arm4_joint_name)->GetScopedName();
+
+					this->jointController->SetPositionTarget(chassis_arm1_joint,  msg->chassis_arm1_joint);
+					this->jointController->SetPositionTarget(arm1_arm2_joint,  msg->arm1_arm2_joint);
+					this->jointController->SetPositionTarget(arm2_arm3_joint,  msg->arm2_arm3_joint);
+					this->jointController->SetPositionTarget(arm3_arm4_joint,  msg->arm3_arm4_joint);
+				
+				}
 
 
-			public: void OnRosMsg(const std_msgs::Float32ConstPtr &_msg)
+			public: void OnRosMsg(const arm_gazebo::angles::ConstPtr& msg)
 			{
-				this->SetVelocity(1.0);
+				this->SetAngle(msg);
 			
 			}
 
@@ -117,15 +134,7 @@ namespace gazebo
 			double j3 = physics::JointState(this->model->GetJoint(arm2_arm3_joint_name)).Position(0);
 			double j4 = physics::JointState(this->model->GetJoint(arm3_arm4_joint_name)).Position(0);			
 
-			/***std::cout << "Enter rotation angle for joint one value";
-  			std::cin >> j1_rot_angle; 
-			cout << "Enter rotation angle for joint two value";
-  			cin >> j2_rot_angle;
-			cout << "Enter rotation angle for joint three value";
-  			cin >> j3_rot_angle;
-			cout << "Enter rotation angle for joint four value";
-  			cin >> j4_rot_angle;***/
-
+			
 			// this->jointController->SetPositionPID(name, pid);
 			// this->jointController->SetPositionTarget(name, rad);
 			// this->jointController->Update();

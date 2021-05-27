@@ -55,12 +55,12 @@ def talker():
     print("Rotate and Translate a vector")
 
     input_vector.vector.linear.x = float(input("Input x (position):"))
-    input_vector.vector.linear.y = float(input("Input x (position):"))
-    input_vector.vector.linear.z = float(input("Input x (position):"))
+    input_vector.vector.linear.y = float(input("Input y (position):"))
+    input_vector.vector.linear.z = float(input("Input z (position):"))
 
     input_vector.vector.angular.x = float(input("Input teta (x-axis rotation):"))
-    input_vector.vector.angular.y = float(input("Input teta (x-axis rotation):"))
-    input_vector.vector.angular.z = float(input("Input teta (x-axis rotation):"))
+    input_vector.vector.angular.y = float(input("Input teta (y-axis rotation):"))
+    input_vector.vector.angular.z = float(input("Input teta (z-axis rotation):"))
   
     
     v = [input_vector.vector.linear.x, input_vector.vector.linear.y, input_vector.vector.linear.z]
