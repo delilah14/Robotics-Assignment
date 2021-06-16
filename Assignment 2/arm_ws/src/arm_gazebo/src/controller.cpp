@@ -66,7 +66,7 @@ namespace gazebo
             int argc = 0;
 			char **argv = NULL;
 			ros::init(argc, argv, "ros_control");
-			//rostopic pub /ik_position_pubarm_lib/ik_positions "x: value y:val x:val
+			//rostopic pub /ik_position_pub arm_lib/ik_positions "x: value y:val x:val
 
 			ikPoseSub = n.subscribe("/ik_position_pub", 1000, &ModelPush::IKGetAngles, this);
 			ros::ServiceClient FKclient = this->rosNode->serviceClient<arm_lib::FK>("fk");
