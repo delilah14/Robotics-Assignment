@@ -169,22 +169,6 @@
                         <size>.15 .02 .3</size>
                     </box>
                 </geometry>
-                <surface>
-                    <friction>
-                        <ode>
-                            <mu>500</mu>
-                            <mu2>500</mu2>
-                            <slip1>0.0</slip1>
-                            <slip2>0.0</slip2>
-                        </ode>
-                    </friction>
-                    <contact>
-                        <ode>
-                            <min_depth>5</min_depth>
-                            <kp>1e8</kp>
-                        </ode>
-                    </contact>
-                </surface>
             </collision>
             <visual name="visual">
                 <geometry>
@@ -205,22 +189,6 @@
                         <size>.15 .02 .3</size>
                     </box>
                 </geometry>
-                <surface>
-                    <friction>
-                        <ode>
-                            <mu>500</mu>
-                            <mu2>500</mu2>
-                            <slip1>0.0</slip1>
-                            <slip2>0.0</slip2>
-                        </ode>
-                    </friction>
-                     <contact>
-                        <ode>
-                            <min_depth>5</min_depth>
-                            <kp>1e8</kp>
-                        </ode>
-                    </contact>
-                </surface>
             </collision>
             <visual name="visual">
                 <geometry>
