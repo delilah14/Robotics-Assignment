@@ -18,18 +18,19 @@ namespace gazebo
 	public:
 		void responseReleaseCatchInput(const arm_lib::release_catch_cmd& msg)
 		{		
-			std::string command = msg.release_catch_cmd;		
+			std::string input_cmd = msg.release_catch_cmd;		
 			
 			std::string palm_rightfinger = this->model->GetJoint("palm_rightfinger_joint")->GetScopedName();
 			std::string palm_leftfinger = this->model->GetJoint("palm_leftfinger_joint")->GetScopedName();
-			//rostopic pub --once /release_catch_pub arm_lib/release_catch_cmd catch
-			//rostopic pub --once /release_catch_pub arm_lib/release_catch_cmd release
-            if(command == "catch"){
-			 //adjust the grip
-			}
-			
-			else if(command == "release"){
-			 //adjust the grip
+			//rostopic pub  /release_catch_pub arm_lib/release_catch_cmd catch
+			//rostopic pub  /release_catch_pub arm_lib/release_catch_cmd release
+            if(input_cmd == "catch"){
+			    this->jointController->SetPositionTarget(palm_rightfinger, -0.3);
+				this->jointController->SetPositionTarget(palm_rightfinger, 0.3);
+			}			
+			else if(input_cmd == "release"){
+			    this->jointController->SetPositionTarget(palm_rightfinger, -0.8);
+				this->jointController->SetPositionTarget(palm_leftfinger, 0.8);
 			}
 		}
 

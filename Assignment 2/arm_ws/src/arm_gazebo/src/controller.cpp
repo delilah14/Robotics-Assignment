@@ -108,31 +108,6 @@ namespace gazebo
 			double j8 = physics::JointState(this->model->GetJoint(palm_rightfinger_joint_name)).Position(0);
 			Fk(j1, j2, j3, j4, j5, j6);
 			ros::spinOnce();
-			/***std::cout << "Enter rotation angle for joint one value";
-  			std::cin >> j1_rot_angle; 
-			cout << "Enter rotation angle for joint two value";
-  			cin >> j2_rot_angle;
-			cout << "Enter rotation angle for joint three value";
-  			cin >> j3_rot_angle;
-			cout << "Enter rotation angle for joint four value";
-  			cin >> j4_rot_angle;***/
-
-			// this->jointController->SetPositionPID(name, pid);
-			// this->jointController->SetPositionTarget(name, rad);
-			// this->jointController->Update();
-
-			// Get joint position by index. 
-			// 0 returns rotation accross X axis
-			// 1 returns rotation accross Y axis
-			// 2 returns rotation accross Z axis
-			// If the Joint has only Z axis for rotation, 0 returns that value and 1 and 2 return nan
-			// double a2 = this->model->GetJoint("chasis_arm1_joint").Position(0);
-			// double a3 = physics::JointState(this->model->GetJoint("chasis_arm1_joint")).Position(2);
-			/*std::cout << "Current chassis_arm1_joint_name values: " << j1 * 180.0 / M_PI << std::endl;
-			std::cout << "Current arm1_arm2_joint values: " << j2 * 180.0 / M_PI << std::endl;
-			std::cout << "Current arm2_arm3_joint values: " << j3 * 180.0 / M_PI << std::endl;
-			std::cout << "Current rm3_arm4_joint values: " << j4 * 180.0 / M_PI << std::endl;
-		    */
 		}
 		void Fk(double j1, double j2, double j3, double j4, double j5, double j6)
 		{

@@ -203,15 +203,7 @@
             <child>arm1</child>
             <parent>chassis</parent>
             <axis>
-                <xyz>0 0 1</xyz>
-                <dynamics>
-                    <damping>2.0</damping>
-                    <friction>0.7</friction>
-                </dynamics>
-                <limit>
-                    <effort>100</effort>
-                    <velocity>1.0</velocity>
-                </limit>
+                <xyz>0 0 1</xyz> 
             </axis>
         </joint>
         <joint type="revolute" name="arm1_arm2_joint">
@@ -219,17 +211,7 @@
             <child>arm2</child>
             <parent>arm1</parent>
             <axis>
-                <xyz>1 0 0</xyz>
-                <dynamics>
-                    <damping>1.0</damping>
-                    <friction>0.3</friction>
-                </dynamics>
-                <limit>
-                    <lower>-1.0</lower>
-                    <upper>1.0</upper>
-                    <effort>100</effort>
-                    <velocity>1.0</velocity>
-                </limit>
+                <xyz>1 0 0</xyz> 
             </axis>
         </joint>
         <joint name="arm2_arm3_joint" type="revolute">
@@ -237,15 +219,7 @@
             <child> arm3 </child>
             <pose> 0 0 -0.5 0 0 0</pose>
             <axis>
-                <xyz> 1 0 0  </xyz>
-                <dynamics>
-                    <damping>1.0</damping>
-                    <friction>0.3</friction>
-                </dynamics>
-                <limit>
-                    <effort>100</effort>
-                    <velocity>1.0</velocity>
-                </limit>
+                <xyz> 1 0 0  </xyz> 
             </axis>
         </joint>
         <joint name="arm3_arm4_joint" type="revolute">
@@ -253,15 +227,7 @@
             <child> arm4 </child>
             <pose> 0 0 -0.25 0 0 0</pose>
             <axis>
-                <xyz> 1 0 0  </xyz>
-                <dynamics>
-                    <damping>1.0</damping>
-                    <friction>0.3</friction>
-                </dynamics>
-                <limit>
-                    <effort>100</effort>
-                    <velocity>1.0</velocity>
-                </limit>
+                <xyz> 1 0 0  </xyz> 
             </axis>
         </joint>
         <joint name="arm4_arm5_joint" type="revolute">
@@ -269,15 +235,7 @@
             <child> arm5 </child>
             <pose> 0 0 -0.025 0 0 0</pose>
             <axis>
-                <xyz> 0 0 1  </xyz>
-                <dynamics>
-                    <damping>1.0</damping>
-                    <friction>0.3</friction>
-                </dynamics>
-                <limit>
-                    <effort>100</effort>
-                    <velocity>1.0</velocity>
-                </limit>
+                <xyz> 0 0 1  </xyz> 
             </axis>
         </joint>
         <joint name="arm5_palm_joint" type="revolute">
@@ -285,15 +243,7 @@
             <child> palm </child>
             <pose> 0 0 -0.02 0 0 0</pose>
             <axis>
-                <xyz> 1 0 0  </xyz>
-                <dynamics>
-                    <damping>1.0</damping>
-                    <friction>0.3</friction>
-                </dynamics>
-                <limit>
-                    <effort>100</effort>
-                    <velocity>1.0</velocity>
-                </limit>
+                <xyz> 1 0 0  </xyz> 
             </axis>
         </joint>
         <joint name="palm_leftfinger_joint" type="revolute">
@@ -307,8 +257,8 @@
                     <friction>0.3</friction>
                 </dynamics>
                 <limit>
-                    <lower>-0.7</lower>
-                    <upper>0.7</upper>
+                    <lower>-0.8</lower>
+                    <upper>0.8</upper>
                     <effort>100</effort>
                     <velocity>1.0</velocity>
                 </limit>
@@ -325,8 +275,8 @@
                     <friction>0.3</friction>
                 </dynamics>
                 <limit>
-                    <lower>-0.7</lower>
-                    <upper>0.7</upper>
+                    <lower>-0.8</lower>
+                    <upper>0.8</upper>
                     <effort>100</effort>
                     <velocity>1.0</velocity>
                 </limit>
